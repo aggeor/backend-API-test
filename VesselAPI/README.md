@@ -26,7 +26,7 @@ VesselAPI consists of 3 files:
 Download XAMPP and follow the installer's instructions.
 
 
-After installing XAMPP, download the contents of this repository and move them in the following directory, where XAMPP is installed :
+After installing XAMPP, download the contents of this repository and move the VesselAPI folder in the following directory, where XAMPP is installed :
 
 ```
 C:\xampp\htdocs\VesselAPI
