@@ -20,8 +20,9 @@ VesselAPI consists of 3 files:
 * [XAMPP](https://www.apachefriends.org/index.html) - A PHP web server solution stack package
 
 
-### Installing
+## Installing 
 
+#### Windows
 
 Download XAMPP and follow the installer's instructions.
 
@@ -34,6 +35,27 @@ C:\xampp\htdocs\VesselAPI
 
 Then open the XAMPP control panel and start Apache and MySQL to run the server.
 
+#### Linux
+
+Download XAMPP and follow the installer's instructions.
+
+
+After installing XAMPP, download the contents of this repository and move the VesselAPI folder in the following directory, where XAMPP is installed :
+
+```
+/opt/lampp/htdocs/VesselAPI
+```
+
+Then open the XAMPP control panel and start Apache and MySQL to run the server.
+
+You may need to grant write permissions for the /opt/lampp/htdocs directory. This is because the request logs of user activity are saved locally in a "requestlogs.txt" file.
+
+
+To do this use the following command :
+
+```
+$sudo chmod -R 777 /opt/lampp/htdocs
+```
 
 ## database.php
 
@@ -116,7 +138,7 @@ The database "vesselsdb" consists of the following tables and fields:
   * lat : INT NOT NULL
   * course : INT NOT NULL
   * heading : INT NOT NULL
-  * rot : INT NOT NULL
+  * rot : VARCHAR(30) NOT NULL
   * timestamp : INT NOT NULL
 * users
   * id : INT NOT NULL PRIMARY KEY AUTO_INCREMENT
