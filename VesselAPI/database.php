@@ -61,7 +61,7 @@ try {
     // MySQL table's name
     $tableName = 'vessels';
     // Get JSON file and decode contents into PHP arrays/values
-    $jsonFile = 'C:\xampp\htdocs\VesselAPI\ship_positions.json';
+    $jsonFile = 'ship_positions.json';
     $jsonData = json_decode(file_get_contents($jsonFile), true);
 
     // Iterate through JSON and build INSERT statements
