@@ -34,7 +34,7 @@ try {
         lat INT NOT NULL,
         course INT NOT NULL,
         heading INT NOT NULL,
-        rot INT NOT NULL,
+        rot VARCHAR(30) NOT NULL,
         timestamp INT NOT NULL
         )";
     if ($conn->query($sql) === TRUE) {
